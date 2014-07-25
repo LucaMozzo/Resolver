@@ -1,0 +1,5 @@
+C:\Users\alex\Downloads\AXLibrary\AXLibrary\bin\Debug\AXLibrary.dll
+C:\Users\alex\Downloads\AXLibrary\AXLibrary\bin\Debug\AXLibrary.pdb
+C:\Users\alex\Downloads\AXLibrary\AXLibrary\obj\Debug\AXLibrary.csprojResolveAssemblyReference.cache
+C:\Users\alex\Downloads\AXLibrary\AXLibrary\obj\Debug\AXLibrary.dll
+C:\Users\alex\Downloads\AXLibrary\AXLibrary\obj\Debug\AXLibrary.pdb

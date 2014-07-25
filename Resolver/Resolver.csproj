@@ -79,10 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AXLibrary\AXExceptions.cs" />
+    <Compile Include="AXLibrary\AXParser.cs" />
+    <Compile Include="AXLibrary\AXTokenizer.cs" />
+    <Compile Include="AXLibrary\AXValidator.cs" />
+    <Compile Include="AXLibrary\ExpressionContext.cs" />
+    <Compile Include="AXLibrary\ExpressionFactory.cs" />
+    <Compile Include="AXLibrary\Expressions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="inputRec.cs" />
+    <Compile Include="InputResolver.cs" />
     <Compile Include="MainForm.aspx.cs">
       <DependentUpon>MainForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

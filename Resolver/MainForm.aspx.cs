@@ -9,15 +9,16 @@ namespace Resolver
 {
     public partial class MainForm : System.Web.UI.Page
     {
+        InputResolver ir;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ir = new InputResolver();
         }
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            inputRec ir = new inputRec();
-            result.Text = "Result: " + ir.getValue(inputbox.Text);
+            result.Text = "Result: " + ir.getResult(inputbox.Text);
         }
 
     }
