@@ -184,6 +184,15 @@ namespace AXLibrary
         }
     }
 
+ /*   public sealed class ChooseExpression : BinaryExpression
+    {
+        //NOTICE: this only works for integers
+        protected override double InnerEvaluate(ExpressionContext context)
+        {
+            
+        }
+    }
+ */
     #endregion
 
     #region FUNCTION EXPRESSIONS

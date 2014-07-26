@@ -27,6 +27,10 @@ namespace AXLibrary
             AddAssociationInternal(@"^PI$", typeof(PIExpression));
             AddAssociationInternal(@"^E$", typeof(EExpression));
 
+            //standard unary operators
+            //AddAssociationInternal(@"^!$", typeof(FactorialExpression));
+            //
+
             //standard binary operators
             AddAssociationInternal(@"^\+$", typeof(AddExpression));
             AddAssociationInternal(@"^-$", typeof(SubtractExpression));
@@ -34,24 +38,27 @@ namespace AXLibrary
             AddAssociationInternal(@"^/$", typeof(DivideExpression));
             AddAssociationInternal(@"^\^$", typeof(PowerExpression));
 
+            //semantic binary operators
+            //AddAssociationInternal(@"^(?i)choose$", typeof(ChooseExpression));
+
             //unary functions
-            AddAssociationInternal(@"^abs$", typeof(AbsExpression));
-            AddAssociationInternal(@"^ln$", typeof(LogExpression));
-            AddAssociationInternal(@"^log$", typeof(LogExpression));
-            AddAssociationInternal(@"^log2$", typeof(Log2Expression));
-            AddAssociationInternal(@"^log10$", typeof(Log10Expression));
-            AddAssociationInternal(@"^exp$", typeof(ExpExpression));
-            AddAssociationInternal(@"^exp2$", typeof(Exp2Expression));
-            AddAssociationInternal(@"^exp10$", typeof(Exp10Expression));
-            AddAssociationInternal(@"^sin$", typeof(SinExpression));
-            AddAssociationInternal(@"^cos$", typeof(CosExpression));
-            AddAssociationInternal(@"^tan$", typeof(TanExpression));
-            AddAssociationInternal(@"^arcsin$", typeof(ArcSinExpression));
-            AddAssociationInternal(@"^arccos$", typeof(ArcCosExpression));
-            AddAssociationInternal(@"^arctan$", typeof(ArcTanExpression));
-            AddAssociationInternal(@"^sinh$", typeof(SinhExpression));
-            AddAssociationInternal(@"^cosh$", typeof(CoshExpression));
-            AddAssociationInternal(@"^tanh$", typeof(TanhExpression));
+            AddAssociationInternal(@"^(?i)abs$", typeof(AbsExpression));
+            AddAssociationInternal(@"^(?i)ln$", typeof(LogExpression));
+            AddAssociationInternal(@"^(?i)log$", typeof(LogExpression));
+            AddAssociationInternal(@"^(?i)log2$", typeof(Log2Expression));
+            AddAssociationInternal(@"^(?i)log10$", typeof(Log10Expression));
+            AddAssociationInternal(@"^(?i)exp$", typeof(ExpExpression));
+            AddAssociationInternal(@"^(?i)exp2$", typeof(Exp2Expression));
+            AddAssociationInternal(@"^(?i)exp10$", typeof(Exp10Expression));
+            AddAssociationInternal(@"^(?i)sin$", typeof(SinExpression));
+            AddAssociationInternal(@"^(?i)cos$", typeof(CosExpression));
+            AddAssociationInternal(@"^(?i)tan$", typeof(TanExpression));
+            AddAssociationInternal(@"^(?i)arcsin$", typeof(ArcSinExpression));
+            AddAssociationInternal(@"^(?i)arccos$", typeof(ArcCosExpression));
+            AddAssociationInternal(@"^(?i)arctan$", typeof(ArcTanExpression));
+            AddAssociationInternal(@"^(?i)sinh$", typeof(SinhExpression));
+            AddAssociationInternal(@"^(?i)cosh$", typeof(CoshExpression));
+            AddAssociationInternal(@"^(?i)tanh$", typeof(TanhExpression));
 
             //parens
             AddAssociationInternal(@"^\($", typeof(LeftParenExpression));
