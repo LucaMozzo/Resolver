@@ -7,7 +7,7 @@ namespace AXLibrary
 {
     #region ABSTRACT EXPRESSION BASE CLASSES
 
-    public abstract class Expression
+    public abstract class Expression : Query
     {
         protected readonly double ZERO_THRESHOLD = 1.0 * Math.Pow(10.0, -14.0);
 
@@ -190,6 +190,14 @@ namespace AXLibrary
         protected override double InnerEvaluate(ExpressionContext context)
         {
             
+        }
+    }
+ */
+/*    public sealed class AssignmentExpression : BinaryExpression
+    {
+        protected override double InnerEvaluate(ExpressionContext context)
+        {
+            context.Bind((Variable)_operand1, _operand2.Evaluate(context));
         }
     }
  */

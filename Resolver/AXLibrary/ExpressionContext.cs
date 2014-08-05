@@ -4,11 +4,22 @@ using System.Text;
 
 namespace AXLibrary
 {
+    
     public enum Variable
     {
         a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+    } 
+     
+/*
+    public class Variable
+    {
+        private String _name;
+        public Variable(String name)
+        {
+            _name = name;
+        }
     }
-
+ */
     public sealed class ExpressionContext
     {
         private Dictionary<Variable, double> _bindings;

@@ -20,14 +20,14 @@ namespace AXLibrary
             /* canned support */
 
             //numbers and variables
-            AddAssociationInternal(@"^[a-z]$", typeof(VariableExpression));
+            AddAssociationInternal(@"^[a-z]+$", typeof(VariableExpression));
             AddAssociationInternal(@"^\d+(\.\d+)?$", typeof(NumericExpression));
 
             //constants
-            AddAssociationInternal(@"^PI$", typeof(PIExpression));
-            AddAssociationInternal(@"^E$", typeof(EExpression));
+            AddAssociationInternal(@"^(?i)PI$", typeof(PIExpression));
+            AddAssociationInternal(@"^(?i)E$", typeof(EExpression));
 
-            //standard unary operators
+            //standard right unary operators
             //AddAssociationInternal(@"^!$", typeof(FactorialExpression));
             //
 
