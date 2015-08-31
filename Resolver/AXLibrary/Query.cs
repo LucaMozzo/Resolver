@@ -36,7 +36,7 @@ namespace AXLibrary
     {
         private Expression _leftExpr, _rightExpr;
 
-        protected override void InnerBind(params object[] arguments)
+        protected void InnerBind(params object[] arguments)
         {
             _leftExpr  = (Expression)arguments[0];
             _rightExpr = (Expression)arguments[1];
